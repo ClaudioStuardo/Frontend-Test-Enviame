@@ -1,0 +1,12 @@
+.search-container {
+	position: relative;
+	display: block;
+	max-width: 1280px;
+	margin: 50px auto 0;
+	padding: 0 20px;
+
+	.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+		background-color: #ed1c24;
+		border: 1px solid #ed1c24;
+	}
+}
