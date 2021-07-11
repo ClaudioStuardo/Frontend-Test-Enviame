@@ -15,6 +15,9 @@ const SearchFunction = (props) => {
 	const [searchInput, setSearchInput] = useState("");
 
 	const handleChange = (e) => {
+		if (e.target.value.length === 0) {
+			setSearch(false);
+		}
 		setSearchInput(e.target.value);
 	};
 
