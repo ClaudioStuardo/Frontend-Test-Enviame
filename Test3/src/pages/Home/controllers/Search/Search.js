@@ -48,7 +48,7 @@ const SearchFunction = (props) => {
 				onChange={handleChange}
 				onSearch={onSearch}
 				size="large"
-				placeholder="Busca a un personaje"
+				placeholder="Busca a un personaje (Ej: Captain America)"
 				loading={loading}
 				enterButton
 			/>

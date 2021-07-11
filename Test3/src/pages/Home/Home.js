@@ -100,13 +100,19 @@ const Home = () => {
 				<div className="heroes-container">
 					{searchState ? (
 						<>
-							{dataSearched.map((item, i) => {
-								return (
-									<div className="col-4" key={i}>
-										<Hero data={item} fullData={data} setData={setData} index={i} />
-									</div>
-								);
-							})}
+							{dataSearched.length > 0 ? (
+								<>
+									{dataSearched.map((item, i) => {
+										return (
+											<div className="col-4" key={i}>
+												<Hero data={item} fullData={data} setData={setData} index={i} />
+											</div>
+										);
+									})}
+								</>
+							) : (
+								<h1 className="error-title">No existe un personaje de marvel con ese nombre</h1>
+							)}
 						</>
 					) : (
 						<>
